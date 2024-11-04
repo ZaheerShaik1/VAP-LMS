@@ -1,0 +1,16 @@
+﻿@page
+@model LirarayManagementSystemP.Pages.VerifyOtpModel
+@{
+}
+
+<div>
+    <h2>Verify Otp</h2>
+</div>
+<div>
+    <p>@Model.Otp</p>
+    <form method="post">
+        <label for="otp">Otp</label>
+        <input type="number" name="otp" required />
+        <button type="submit">verify</button>
+    </form>
+</div>

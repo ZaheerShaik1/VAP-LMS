@@ -1,0 +1,130 @@
+﻿@* @page
+@model LirarayManagementSystemP.Pages.IssueBookModel
+
+@{
+    ViewData["Title"] = "Issue Book";
+}
+<div>
+    <center><h2>Issue Book</h2></center>
+</div>
+
+<div>
+    <form method="post">
+        <label for="id">Student:</label>
+        <select name="id" required>
+            <option value="">Select a student</option>
+            @foreach (var student in Model.AvailableStudents)
+            {
+                <option value="@student.Id">@student.Name</option>
+            }
+        </select>
+        <br /><br />
+
+        <label for="bookid">Book:</label>
+        <select name="bookid" required>
+            <option value="">Select a book</option>
+            @foreach (var book in Model.AvailableBooks)
+            {
+                <option value="@book.Id">@book.Title</option>
+            }
+        </select>
+        <br /><br />
+
+        <label for="Duration">Duration (Days):</label>
+        <input type="number" name="Duration" required />
+        <br /><br />
+
+        <button type="submit" class="btn btn-primary">Issue Book</button>
+    </form>
+</div>
+ *@
+
+ @page
+@model LirarayManagementSystemP.Pages.IssueBookModel
+
+@{
+    ViewData["Title"] = "Issue Book";
+}
+
+<style>
+    body {
+        background-color: #f4f4f4;
+        font-family: Arial, sans-serif;
+    }
+
+    .issue-book-container {
+        width: 400px;
+        margin: auto;
+        border: solid 1px #ccc;
+        border-radius: 8px;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        text-align: center;
+        color: #333;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        color: #555;
+    }
+
+    select,
+    input[type="number"] {
+        width: calc(100% - 10px);
+        padding: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+</style>
+
+<div class="issue-book-container">
+    <h2>Issue Book</h2>
+    <form method="post">
+        <label for="id">Student:</label>
+        <select name="id" required>
+            <option value="">Select a student</option>
+            @foreach (var student in Model.AvailableStudents)
+            {
+                <option value="@student.Id">@student.Name</option>
+            }
+        </select>
+        <br />
+
+        <label for="bookid">Book:</label>
+        <select name="bookid" required>
+            <option value="">Select a book</option>
+            @foreach (var book in Model.AvailableBooks)
+            {
+                <option value="@book.Id">@book.Title</option>
+            }
+        </select>
+        <br />
+
+        <label for="Duration">Duration (Days):</label>
+        <input type="number" name="Duration" required />
+        <br />
+
+        <button type="submit" class="btn btn-primary">Issue Book</button>
+    </form>
+</div>

@@ -1,0 +1,83 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = LirarayManagementSystemP
+build_property.RootNamespace = LirarayManagementSystemP
+build_property.ProjectDir = C:\Users\shaik\source\repos\LirarayManagementSystemP\LirarayManagementSystemP\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\shaik\source\repos\LirarayManagementSystemP\LirarayManagementSystemP
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/shaik/source/repos/LirarayManagementSystemP/LirarayManagementSystemP/Pages/AddStudent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkU3R1ZGVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/shaik/source/repos/LirarayManagementSystemP/LirarayManagementSystemP/Pages/Book.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQm9vay5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/shaik/source/repos/LirarayManagementSystemP/LirarayManagementSystemP/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/shaik/source/repos/LirarayManagementSystemP/LirarayManagementSystemP/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/shaik/source/repos/LirarayManagementSystemP/LirarayManagementSystemP/Pages/IssueBook.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSXNzdWVCb29rLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/shaik/source/repos/LirarayManagementSystemP/LirarayManagementSystemP/Pages/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/shaik/source/repos/LirarayManagementSystemP/LirarayManagementSystemP/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/shaik/source/repos/LirarayManagementSystemP/LirarayManagementSystemP/Pages/Registration.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0cmF0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/shaik/source/repos/LirarayManagementSystemP/LirarayManagementSystemP/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/shaik/source/repos/LirarayManagementSystemP/LirarayManagementSystemP/Pages/VerifyOtp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVyaWZ5T3RwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/shaik/source/repos/LirarayManagementSystemP/LirarayManagementSystemP/Pages/ViewBooks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld0Jvb2tzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/shaik/source/repos/LirarayManagementSystemP/LirarayManagementSystemP/Pages/ViewIssuedBooks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld0lzc3VlZEJvb2tzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/shaik/source/repos/LirarayManagementSystemP/LirarayManagementSystemP/Pages/ViewStudents.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld1N0dWRlbnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/shaik/source/repos/LirarayManagementSystemP/LirarayManagementSystemP/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/shaik/source/repos/LirarayManagementSystemP/LirarayManagementSystemP/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/shaik/source/repos/LirarayManagementSystemP/LirarayManagementSystemP/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-rlt9nttii4

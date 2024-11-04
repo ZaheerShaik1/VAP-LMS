@@ -1,0 +1,53 @@
+﻿@page
+@model LirarayManagementSystemP.Pages.ViewIssuedBooksModel
+@{
+    ViewData["Title"] = "Issued Books";
+}
+
+<div class="text-center mb-4">
+    <h2>Issued Books</h2>
+</div>
+
+<div class="container">
+    @if (TempData["Message"] != null)
+    {
+        <div class="alert alert-success">@TempData["Message"]</div>
+    }
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger">@TempData["Error"]</div>
+    }
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Book ID</th>
+                <th>Book Title</th>
+                <th>Student ID</th>
+                <th>Student Name</th>
+                <th>Issue Date</th>
+                <th>Expiry Date</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var issuedBook in Model.IssuedBooks)
+            {
+                <tr>
+                    <td>@issuedBook.BookId</td>
+                    <td>@issuedBook.Book.Title</td> <!-- Assuming Book entity has Title property -->
+                    <td>@issuedBook.StudentId</td>
+                    <td>@issuedBook.Student.Name</td> <!-- Assuming Student entity has Name property -->
+                    <td>@issuedBook.IssueDate.ToString("yyyy-MM-dd")</td>
+                    <td>@issuedBook.ExpiryDate.ToString("yyyy-MM-dd")</td>
+                    <td>
+                        <form method="post" asp-page-handler="ReturnBook">
+                            <input type="hidden" name="issuedBookId" value="@issuedBook.Id" />
+                            <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure you want to return this book?');">Return</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

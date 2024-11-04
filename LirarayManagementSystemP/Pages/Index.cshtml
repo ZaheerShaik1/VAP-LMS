@@ -1,0 +1,92 @@
+﻿@* @page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="text-center">
+    <h1 class="display-4">Library Management System</h1>
+</div>
+<br />
+<br />
+
+<div class="text-center mt-4">
+    <button type="button" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif" class="btn btn-primary "  onclick="location.href='@Url.Page("/Book")'"><i class="fa fa-user"></i> Book Entry</button>
+    <button type="button" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif" class="btn btn-primary" onclick="location.href='@Url.Page("/ViewBooks")'"><i class="fa fa-book" aria-hidden="true"></i> View Books</button>
+    <button type="button" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif" class="btn btn-primary" onclick="location.href='@Url.Page("/AddStudent")'"><i class="fa fa-user-plus" aria-hidden="true"></i> Add Student</button>
+    <button type="button" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif" class="btn btn-primary" onclick="location.href='@Url.Page("/ViewStudents")'"><i class="fa fa-address-book" aria-hidden="true"></i> View Students</button>
+    <button type="button" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif" class="btn btn-primary" onclick="location.href='@Url.Page("/IssueBook")'">Issue a Book</button>
+    <button type="button" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif" class="btn btn-primary" onclick="location.href='@Url.Page("/ViewIssuedBooks")'">View Issued a Book</button>
+</div>
+
+ *@
+
+ @page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body {
+        background-color: #f4f4f4;
+        font-family: Arial, sans-serif;
+    }
+
+    .header {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+        .header h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+    .button-container {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .btn {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 12px 20px;
+        margin: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.2s;
+         display: inline-flex;
+        align-items: center;
+    }
+
+        .btn i {
+            margin-right: 8px;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+        }
+</style>
+
+<div class="header">
+    <h1 class="display-4">Library Management System</h1>
+</div>
+
+<div class="button-container">
+    <button type="button" class="btn" onclick="location.href='@Url.Page("/Book")'"><i class="fa fa-user"></i> Book Entry</button>
+    <button type="button" class="btn" onclick="location.href='@Url.Page("/ViewBooks")'"><i class="fa fa-book" aria-hidden="true"></i> View Books</button>
+    <button type="button" class="btn" onclick="location.href='@Url.Page("/AddStudent")'"><i class="fa fa-user-plus" aria-hidden="true"></i> Add Student</button>
+    <button type="button" class="btn" onclick="location.href='@Url.Page("/ViewStudents")'"><i class="fa fa-address-book" aria-hidden="true"></i> View Students</button>
+    <button type="button" class="btn" onclick="location.href='@Url.Page("/IssueBook")'">Issue a Book</button>
+    <button type="button" class="btn" onclick="location.href='@Url.Page("/ViewIssuedBooks")'">View Issued Books</button>
+</div>

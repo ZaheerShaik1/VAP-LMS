@@ -1,0 +1,107 @@
+﻿@* 
+ @page
+@model LirarayManagementSystemP.Pages.ViewBooksModel
+@{
+    ViewData["Title"] = "All Books";
+}
+
+<div class="text-center mb-4">
+    <h2>All Books</h2>
+</div>
+
+<div class="container">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Date Added</th>
+                <th>Rack ID</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var book in Model.Books)
+            {
+                <tr>
+                    <td>@book.Id</td>
+                    <td>@book.Title</td>
+                    <td>@book.Author</td>
+                    <td>@book.DateCreated?.ToString("yyyy-MM-dd")</td>
+                    <td>@book.RackId</td>
+                    <td>
+                        <form method="post" asp-page-handler="RemoveBook">
+                            <input type="hidden" name="bookId" value="@book.Id" />
+                            <button type="submit" class="btn btn-danger btn-sm">Remove</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-success">@TempData["Message"]</div>
+}
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger">@TempData["Error"]</div>
+}
+ *@
+
+ @page
+@model LirarayManagementSystemP.Pages.ViewBooksModel
+@{
+    ViewData["Title"] = "All Books";
+}
+
+<div class="text-center mb-4">
+    <h2>All Books</h2>
+</div>
+
+<div class="container">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Date Added</th>
+                <th>Rack ID</th>
+                @* <th>Status</th> *@ <!-- New Status Column -->
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var book in Model.Books)
+            {
+                <tr>
+                    <td>@book.Id</td>
+                    <td>@book.Title</td>
+                    <td>@book.Author</td>
+                    <td>@book.DateCreated?.ToString("yyyy-MM-dd")</td>
+                    <td>@book.RackId</td>
+                     @* <td>@book.Status</td> <!-- Displaying the status --> *@
+                    <td>
+                        <form method="post" asp-page-handler="RemoveBook">
+                            <input type="hidden" name="bookId" value="@book.Id" />
+                            <button type="submit" class="btn btn-danger btn-sm">Remove</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-success">@TempData["Message"]</div>
+}
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger">@TempData["Error"]</div>
+}

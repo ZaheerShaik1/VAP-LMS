@@ -1,0 +1,146 @@
+﻿@* @page
+@model LirarayManagementSystemP.Pages.RegistrationModel
+@{
+    
+}
+
+<div>
+    <h2>Admin Registration</h2>
+    <form  method="post" >
+        <div>
+            <label for="name">Full Name:</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="name" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email"  name="email" required>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password"  name="password" required>
+        </div>
+        <div>
+            <label for="phone">Phone Number:</label>
+            <input type="number"  name="phone" required>
+        </div>
+        <div>
+            <label for="dob">Date of Birth:</label>
+            <input type="date"  name="dob"   required>
+        </div>
+        <div>
+            <label for="employeeId">Employee ID:</label>
+            <input type="text"  name="employeeId" required>
+        </div>
+        <div>
+            <label for="address">Address:</label>
+            <textarea name="address" required></textarea>
+        </div>
+        
+        <button type="submit">Register</button>
+    </form>
+    @* <p>Already have an account? <a href="/login">Login here</a>.</p> *@
+
+
+@page
+@model LirarayManagementSystemP.Pages.RegistrationModel
+@{
+}
+
+<style>
+    body {
+        background-color: #f4f4f4;
+        font-family: Arial, sans-serif;
+    }
+
+    .registration-container {
+        width: 400px;
+        margin: auto;
+        border: solid 1px #ccc;
+        border-radius: 8px;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        text-align: center;
+        color: #333;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 3px;
+        color: #555;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="number"],
+    input[type="date"],
+    textarea {
+        width: calc(100% - 10px);
+        height:35px;
+        padding: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    button:hover {
+        background-color: #218838;
+    }
+
+    textarea {
+        resize: vertical;
+    }
+</style>
+
+<div class="registration-container">
+    <h2>Admin Registration</h2>
+    <form method="post">
+        <div>
+            <label for="name">Full Name:</label>
+            <input type="text" name="name" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" required>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" name="password" required>
+        </div>
+        <div>
+            <label for="phone">Phone Number:</label>
+            <input type="number" name="phone" required>
+        </div>
+        <div>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" name="dob" required>
+        </div>
+        <div>
+            <label for="employeeId">Employee ID:</label>
+            <input type="text" name="employeeId" required>
+        </div>
+        <div>
+            <label for="address">Address:</label>
+            <textarea name="address" required></textarea>
+        </div>
+        
+        <button type="submit">Register</button>
+        @* <p>Already have an account? <a href="/login">Login here</a>.</p> *@
+    </form>
+</div>
